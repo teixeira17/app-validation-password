@@ -75,32 +75,32 @@ CURL de exemplo:
 :white_check_mark: Imagem de exemplo do Swagger quando a senha for válida.
 Senha informada: "AbTp9!fok"
 
-![image](https://user-images.githubusercontent.com/32078335/194736464-9e59421a-b02f-4a5a-8edf-a87511baf0e9.png)
+![image](https://user-images.githubusercontent.com/32078335/194924823-e2b2aca6-29c6-441a-b4ff-bf3edb4bb60f.png)
 
 :x: Imagem de exemplo do Swagger quando a senha não tiver caracter minúsculo.
 Senha informada: "ABTP9!FOK"
 
-![image](https://user-images.githubusercontent.com/32078335/194736544-d2a9c565-c582-46c8-a62a-5c6bef453a91.png)
+![image](https://user-images.githubusercontent.com/32078335/194924934-af046ba8-67e0-4567-aaec-58723546f6c3.png)
 
 :x: Imagem de exemplo do Swagger quando a senha não tiver caracter maiúsculo.
 Senha informada: "abtp9!fok"
 
-![image](https://user-images.githubusercontent.com/32078335/194736586-316d2779-cf72-498f-8da0-cf1dfd40d81f.png)
+![image](https://user-images.githubusercontent.com/32078335/194925027-c7302a19-0864-48b7-ab73-63c884f9e5f6.png)
 
 :x: Imagem de exemplo do Swagger quando a senha não tiver caracter especial.
 Senha informada: "aBtp9RfoK"
 
-![image](https://user-images.githubusercontent.com/32078335/194736620-b4a87cd8-bdd3-4246-b2eb-cfe1c5f46997.png)
+![image](https://user-images.githubusercontent.com/32078335/194925114-f141f680-5ac7-4e5e-a462-5ce43ec9d41a.png)
 
 :x: Imagem de exemplo do Swagger quando a senha não tiver caracteres suficientes.
 Senha informada: "aB!"
 
-![image](https://user-images.githubusercontent.com/32078335/194736698-c7611092-f2fe-435f-ae87-8ca593e75037.png)
+![image](https://user-images.githubusercontent.com/32078335/194925219-75ca75d2-e277-492d-93bc-4cacdf2a7b86.png)
 
 :x: Imagem de exemplo do Swagger quando a senha tiver caracteres repetidos.
 Senha informada: "AbTp9!foA"
 
-![image](https://user-images.githubusercontent.com/32078335/194736727-5cced5d7-9d72-4f60-b3e1-c493cc6fc958.png)
+![image](https://user-images.githubusercontent.com/32078335/194925280-814a891a-1a58-41e1-a3b7-37494b318657.png)
 
 
 ## ⚡ Solução de negócio
