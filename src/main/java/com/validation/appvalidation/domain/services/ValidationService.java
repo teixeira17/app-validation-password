@@ -15,6 +15,13 @@ import java.util.regex.Pattern;
 @Service
 public class ValidationService {
 
+    private static final String VALIDONEDIGIT = "A senha deve conter ao menos um dígito.";
+    private static final String VALIDLOWERCASE = "Senha inválida. Informe pelo menos uma letra minúscula.";
+    private static final String VALIDUPPERCASE = "Senha inválida. Informe pelo menos uma letra maiúscula.";
+    private static final String VALIDSPECIALCHARACTER = "Senha inválida. Informe pelo menos um caractere especial.";
+    private static final String VALIDLESSTHANNINECHARACTERS = "Senha inválida. Informe pelo menos noves caracteres.";
+    private static final String VALIDPASSWORDHASREPEATEDCHARACTER = "Senha inválida. Não informe caracteres repetidos.";
+
     private static String message;
 
     private final ValidationRepository repository;
@@ -44,12 +51,12 @@ public class ValidationService {
 
         message = "true";
 
-        if (!DIGIT.matcher(password).find()) { message = "A senha deve conter ao menos um dígito."; }
-        if (!LOWER.matcher(password).find()) { message = "A senha deve conter ao menos uma letra minúscula."; }
-        if (!UPPER.matcher(password).find()) { message = "A senha deve conter ao menos uma letra maiúscula."; }
-        if (!PUNCT.matcher(password).find()) { message = "A senha deve conter ao menos um caracter especial."; }
-        if (!NINE.matcher(password).find()) { message = "A senha deve conter no mínimo 9 caracteres."; }
-        if (charDuplicated(password)) { message = "A senha não deve conter caracteres repetidos."; }
+        if (!DIGIT.matcher(password).find()) { message = VALIDONEDIGIT; }
+        if (!LOWER.matcher(password).find()) { message = VALIDLOWERCASE; }
+        if (!UPPER.matcher(password).find()) { message = VALIDUPPERCASE; }
+        if (!PUNCT.matcher(password).find()) { message = VALIDSPECIALCHARACTER; }
+        if (!NINE.matcher(password).find()) { message = VALIDLESSTHANNINECHARACTERS; }
+        if (charDuplicated(password)) { message = VALIDPASSWORDHASREPEATEDCHARACTER; }
 
         return message.equalsIgnoreCase("true");
     }
